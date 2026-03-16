@@ -11,7 +11,7 @@ At a high level, an application command (whether Tcl or Python) has **three key 
 2. **Input Script** *(optional)* – File containing modeling and analysis commands
 3. **Command-Line Arguments** *(optional)* – External values passed into the script
 
-These components correspond to three primary **execution modes**, which refer to to **how you run a simulation.** This affects everything from how variables are set to how results are saved.
+These components correspond to three primary **execution modes**, which refer to **how you run a simulation.** This affects everything from how variables are set to how results are saved.
 
 * **Interactive Mode** – Enter commands one at a time. Each command is executed once entered.
 * **Non-Interactive Mode** – Execute a full script from top to bottom

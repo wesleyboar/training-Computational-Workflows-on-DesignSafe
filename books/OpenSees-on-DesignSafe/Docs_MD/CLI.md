@@ -68,7 +68,7 @@ wc –l directoryname    : how many files in a directory
 wc –l filename         : how many lines in a file 
 ```
 
-**Tip:** In Jupyter Hub, you can do most file operations through the navigation pane, but knowing these commands is crucial for work on the HPC.
+**Tip:** In JupyterHub, you can do most file operations through the navigation pane, but knowing these commands is crucial for work on the HPC.
 :::
 ## Summary
 

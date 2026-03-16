@@ -159,7 +159,7 @@ This Glossary is Focused on DesignSafe + Stampede3 workflows
     Used for reproducible, environment-controlled apps.
     
     
-* **Modules (TACC Environment Modules**
+* **Modules (TACC Environment Modules)**
     
     System-provided software components that can be loaded at runtime:
     ```

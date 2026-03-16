@@ -25,7 +25,7 @@ The execution system on TACC used in this training module is **Stampede3**.
 |------------------------|--------------------------|-------------------------|----------------------------|--------------------------|-------------------|
 | **NODE**               | **NVDIMM**               | **ICX**                 | **SPR**                    | **PVC**                  | **SKX**           |
 |------------------------|--------------------------|-------------------------|----------------------------|--------------------------|-------------------|
-| **Special Notes**      | Large memory nodes       | Standard compute nodes  | High bandwidth & core count| GPU-accelerated nodes    | Legacy nodes. Less powerful by more numerous      |
+| **Special Notes**      | Large memory nodes       | Standard compute nodes  | High bandwidth & core count| GPU-accelerated nodes    | Legacy nodes. Less powerful but more numerous      |
 | **Node Count**         | 3                        | 224                     | 560                        | 20                       | 1,060             |
 | **CPU Model**          | Xeon Platinum 8380       | Xeon Platinum 8380      | Xeon MAX 9480              | Xeon Platinum 8480       | Xeon Platinum 8160 |
 | **Cores/Node**         | 80 (2x40)                | 80 (2x40)               | 112 (2x56)                 | 96 (2x48)                | 48 (2x24)         |

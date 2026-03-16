@@ -1,6 +1,6 @@
 **LICENSE**
 
-This documentation is protected under **BSD 3-Clause License**.
+This documentation is protected under the **Creative Commons Attribution-ShareAlike 4.0 International License**.
 
 Attribution-ShareAlike 4.0 International
 

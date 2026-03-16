@@ -45,7 +45,7 @@ python model.py
 where `model.py` is a standard Python script that builds your model and analysis using OpenSeesPy’s functions. When no input file is given, **python** runs in **interactive mode**, prompting you for commands one at a time.
 
 
-Because OpenSeesPy sits inside Python, it benefits from Python’s full ecosystem for data processing, visualization, and automation. However, support for `OpenSeesMP` and `OpenSeesSP` features in OpenSeesPy can vary by platform, so it’s recommended to test parallel capabilities explicitly on Jupyter Hub vs the HPC environment.
+Because OpenSeesPy sits inside Python, it benefits from Python’s full ecosystem for data processing, visualization, and automation. However, support for `OpenSeesMP` and `OpenSeesSP` features in OpenSeesPy can vary by platform, so it’s recommended to test parallel capabilities explicitly on JupyterHub vs the HPC environment.
 
 :::
 

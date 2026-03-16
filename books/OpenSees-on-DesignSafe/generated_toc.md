@@ -16,7 +16,7 @@
 ## OpenSees
 - [OpenSees](Docs_MD/OpenSees_AndDesignSafe.md)
 - [OpenSees-Tcl & OpenSeesPy](Docs_MD/Interpreters_Intro.md)
-  - [Interpreter Worflows](Docs_MD/Interpreters_Workflow.md)
+  - [Interpreter Workflows](Docs_MD/Interpreters_Workflow.md)
 - [Decision Matrix](Docs_MD/Interpreters_DecisionMatrix.md)
 - [Command Structure](Docs_MD/Ops_CommandStrux.md)
   - [Executable File](Docs_MD/Ops_CommandStrux_1_ExecutableFile.md)
@@ -37,7 +37,7 @@
 - [OpenSees on HPC](Docs_MD/RunOpsOnHPC.md)
 - [OpenSees from Web Portal](Docs_MD/WebPortal_Overview.md)
 
-## Jupyter Hub
+## JupyterHub
 - [OpenSees on JupyterHub](Docs_MD/RunOpsInDS_JupyterHub_intro.md)
 - [Terminal CLI](Docs_MD/CLI.md)
   - [Run OpenSees Interactive at the CLI](Docs_MD/RunOpenSees_CLI_interactive.md)

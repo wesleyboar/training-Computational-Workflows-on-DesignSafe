@@ -1,7 +1,7 @@
 # Allocations
 
 This guide explains what TACC allocations are, who can apply, how to request them, and where to find more resources for the **TACC**.
-***NOTE:** The contents of this section are informational and may have been superceded.*
+***NOTE:** The contents of this section are informational and may have been superseded.*
 
 
 

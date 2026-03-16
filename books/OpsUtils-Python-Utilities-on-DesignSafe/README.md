@@ -11,7 +11,7 @@ They are designed to make your work with DesignSafe, Tapis, OpenSees, and genera
 All of these functions are stored under **CommunityData** and organized so that you can import them just like a regular Python module.  
 The only difference is that you also specify the location where these functions live. Here’s how to import them:
 
-**NOTE: Since we are continutally developing these utilities, they are not all documented or have updated documentation**
+**NOTE: Since we are continually developing these utilities, they are not all documented or have updated documentation**
 
 
 ```python

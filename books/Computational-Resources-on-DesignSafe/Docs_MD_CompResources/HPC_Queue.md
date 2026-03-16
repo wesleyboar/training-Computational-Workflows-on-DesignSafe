@@ -9,7 +9,7 @@ When you submit a job to a high-performance computing (HPC) system like **Stampe
 
 Understanding queues and the **hardware structure of nodes** is essential to writing efficient, scalable, and stable jobs.
 
-Choosing you queue wisely helps you:
+Choosing your queue wisely helps you:
 
 * Get scheduled **sooner** (shorter jobs tend to start faster)
 * Use system resources **more efficiently**

@@ -1,7 +1,7 @@
 # Run OpenSees Script at the CLI
 
 
-Most OpenSees analyses are run in **non-interactive mode**, where you execute a full input script all at once. Even if you’re in an interactive environment like Jupyter, running a script this way means the entire sequence of commands executes without waiting for further input. Jupyter Hub has an integrated editor to make things easy.
+Most OpenSees analyses are run in **non-interactive mode**, where you execute a full input script all at once. Even if you’re in an interactive environment like Jupyter, running a script this way means the entire sequence of commands executes without waiting for further input. JupyterHub has an integrated editor to make things easy.
 
 You can run therefore, run either OpenSees(Tcl) and OpenSeesPy (Python) in non-interactive batch mode at the terminal's CLI by specifying the input script to execute. In both cases, the first argument provided after the executable is interpreted as the **main script file** to run.
 

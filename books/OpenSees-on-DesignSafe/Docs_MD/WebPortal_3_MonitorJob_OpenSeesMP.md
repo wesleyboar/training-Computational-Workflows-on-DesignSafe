@@ -45,7 +45,7 @@ Select the tapisjob.out file.
 14. Once finished, click "View Output"
 15. You can see that the files have been moved to your MyData folder, in 'tapis-jobs-archive' folder. you can now access it from anywhere.
 16. Check the tapisjob.out file for messages at the bottom of the output to see if OpenSees exited cleanly or had an error.
-17. ... you can now check the output content and then view it in Jupyter Hub.
+17. ... you can now check the output content and then view it in JupyterHub.
 
 
 <div id="slideShow">

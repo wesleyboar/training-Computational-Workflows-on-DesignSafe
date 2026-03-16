@@ -5,7 +5,7 @@ The **JupyterHub Environment** on DesignSafe runs on a Kubernetes-managed cluste
 
 This environment is the **starting point *(and end point)* for most workflows**. It allows you to iteratively build and test your input scripts in real time before scaling up to HPC batch jobs.
 
-## Why Use Jupyter Hub?
+## Why Use JupyterHub?
 
 * **Immediate startup** — no job queues or allocation requests
 * **Full control and feedback** — ideal for debugging, exploration, and visualization
@@ -13,7 +13,7 @@ This environment is the **starting point *(and end point)* for most workflows**.
 * **Supports OpenSees, OpenSeesMP/SP, and OpenSeesPy**, plus other languages (MATLAB, Julia, R)
 * **Direct connection to Tapis** — submit HPC jobs from within the notebook
 
-## Ways to Run OpenSees Inside Jupyter Hub
+## Ways to Run OpenSees Inside JupyterHub
 
 You can run OpenSees in a variety of flexible ways from within this environment:
 
@@ -55,7 +55,7 @@ You can run OpenSees in a variety of flexible ways from within this environment:
 
 ## Summary
 
-The **DesignSafe Jupyter Hub** is a powerful entry point into OpenSees workflows. It offers dedicated computing resources in an easy-to-use environment where you can:
+The **DesignSafe JupyterHub** is a powerful entry point into OpenSees workflows. It offers dedicated computing resources in an easy-to-use environment where you can:
 
 * Develop, debug, and run OpenSees scripts in real time
 * Automate job submission to HPC systems like Stampede3
