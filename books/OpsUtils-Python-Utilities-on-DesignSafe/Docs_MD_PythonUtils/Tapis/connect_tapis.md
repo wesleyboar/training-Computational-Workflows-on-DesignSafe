@@ -1,10 +1,6 @@
-Here’s an updated, drop-in doc page that matches your current function’s behavior (including the “blank password lets you re-enter the username” flow and returning `None` when login is cancelled). I kept your structure and added the key nuances.
+# connect_tapis()
 
----
-
-# connect\_tapis()
-
-***connect\_tapis(token\_filePath="\~/.tapis\_tokens.json", base\_url="[https://designsafe.tapis.io](https://designsafe.tapis.io)", username="", password="", force\_connect=False)***
+***connect_tapis(token_filePath="~/.tapis_tokens.json", base_url="[https://designsafe.tapis.io](https://designsafe.tapis.io)", username="", password="", force_connect=False)***
 
 **Purpose.** Create an authenticated **Tapis** client (e.g., for DesignSafe) with **automatic token caching**. It reuses a valid saved token when available; otherwise it securely prompts for credentials, fetches a new token, saves it for next time, and returns a ready-to-use client.
 
@@ -12,7 +8,7 @@ Here’s an updated, drop-in doc page that matches your current function’s beh
 
 ### What it does
 
-* **Checks** *token\_filePath* (default `~/.tapis_tokens.json`) for a saved token.
+* **Checks** *token_filePath* (default `~/.tapis_tokens.json`) for a saved token.
 * **Valid token** → uses it directly (no login prompts).
 * **Missing/expired** or **`force_connect=True`** → performs a fresh login, **saves** the token, and continues.
 * **Prints** when the token expires and how long remains.
@@ -25,11 +21,11 @@ Here’s an updated, drop-in doc page that matches your current function’s beh
 
 ### Parameters
 
-* **token\_filePath** *(str, default `"~/.tapis_tokens.json"`)* – Path to the JSON token file.
-* **base\_url** *(str, default `"https://designsafe.tapis.io"`)* – Tapis API base URL for your tenancy.
+* **token_filePath** *(str, default `"~/.tapis_tokens.json"`)* – Path to the JSON token file.
+* **base_url** *(str, default `"https://designsafe.tapis.io"`)* – Tapis API base URL for your tenancy.
 * **username** *(str, default `""`)* – Preset username; if empty, you’ll be prompted (blank cancels).
 * **password** *(str, default `""`)* – Preset password; if empty, you’ll be prompted securely. **Blank at the prompt restarts** and lets you change the username.
-* **force\_connect** *(bool, default `False`)* – Force a fresh login even if a valid token exists.
+* **force_connect** *(bool, default `False`)* – Force a fresh login even if a valid token exists.
 
 ---
 
@@ -99,7 +95,7 @@ Fix a mistyped username during prompts:
 ### Notes & tips
 
 * **Security:** The token file contains only the access token and expiry, not your password; the code attempts to set file permissions to `0600` after writing.
-* **Portability:** You can point *token\_filePath* to a project-local location (e.g., inside a shared workspace) if appropriate.
+* **Portability:** You can point *token_filePath* to a project-local location (e.g., inside a shared workspace) if appropriate.
 * **Diagnostics:** On success you’ll see `-- AUTHENTICATED VIA SAVED TOKEN` (cache) or `-- AUTHENTICATED VIA FRESH LOGIN`. Expiry time and remaining duration are printed.
 
 ---
