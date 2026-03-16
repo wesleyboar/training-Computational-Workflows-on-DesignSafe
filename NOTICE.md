@@ -1,11 +1,11 @@
-Repository Attribution Notice
-=============================
+****** **Repository Attribution Notice** ********
+
 
 This repository contains training material and code developed for
 DesignSafe-CI.
 
-Author
-------
+**Author**
+
 
 Silvia Mazzoni
 DesignSafe-CI
@@ -13,8 +13,8 @@ Texas Advanced Computing Center
 University of Texas at Austin
 
 
-Documentation and Training Material
------------------------------------
+**Documentation and Training Material**
+
 
 All documentation, written content, figures, and Jupyter notebooks
 are licensed under the Creative Commons Attribution 4.0
@@ -35,8 +35,7 @@ Recommended attribution:
     Licensed under CC BY 4.0
 
 
-Code
-----
+**Code**
 
 Python utilities, scripts, and other software components are licensed
 under the MIT License.
@@ -45,8 +44,7 @@ If you reuse code from this repository you must retain the MIT license
 header in the source code.
 
 
-Non-Endorsement
----------------
+**Non-Endorsement**
 
 Reuse of this material must not imply endorsement by:
 
@@ -55,9 +53,3 @@ Reuse of this material must not imply endorsement by:
     The University of Texas at Austin
     Silvia Mazzoni
 
-
-Disclaimer
-----------
-
-This material is provided for educational and research purposes.
-No warranty is provided regarding suitability for specific applications.

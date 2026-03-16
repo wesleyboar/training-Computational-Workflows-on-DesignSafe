@@ -6,8 +6,8 @@ software utilities.
 Different parts of the repository are licensed under different licenses.
 
 
-Documentation and Training Material
------------------------------------
+**Documentation and Training Material**
+
 
 All documentation, figures, and Jupyter notebooks are licensed under:
 
@@ -22,8 +22,8 @@ is given to the original author.
 ::::
 
 
-Code
-----
+**Code**
+
 
 Python utilities and scripts are licensed under the MIT License.
 
@@ -34,8 +34,8 @@ Python utilities and scripts are licensed under the MIT License.
 ::::
 
 
-Attribution Requirement
------------------------
+**Attribution Requirement**
+
 
 If you reuse material from this repository in documentation,
 courses, or derivative works, please include an attribution such as:
@@ -53,8 +53,8 @@ Full license texts are available in the LICENSE and LICENSE-CODE files.
 ::::
 
 
-Non-Endorsement
----------------
+**Non-Endorsement**
+
 
 Reuse of this material must not imply endorsement by DesignSafe-CI,
 Texas Advanced Computing Center, the University of Texas at Austin,
