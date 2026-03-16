@@ -2,6 +2,10 @@
 ***OpsUtils: Python Library on DesignSafe***
 
 by **Silvia Mazzoni**<br>
+DesignSafe-CI<br>
+Texas Advanced Computing Center (TACC)<br>
+The University of Texas at Austin<br>
+
 January 2026
 
 

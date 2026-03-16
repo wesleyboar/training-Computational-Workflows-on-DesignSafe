@@ -2,6 +2,10 @@
 ***Understanding Interfaces, Middleware, and Execution Environments***
 
 by **Silvia Mazzoni**<br>
+DesignSafe-CI<br>
+Texas Advanced Computing Center (TACC)<br>
+The University of Texas at Austin<br>
+
 January 2026
 
 DesignSafe provides a comprehensive cyberinfrastructure for conducting, managing, and analyzing research workflows in natural hazards engineering. It brings together **interactive computing environments**, **shared data services**, and **large-scale computational resources** to support the full research lifecycle — from early model development, to large ensemble simulations, to advanced post-processing and data analysis.

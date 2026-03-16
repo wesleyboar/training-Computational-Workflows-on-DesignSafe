@@ -1,7 +1,12 @@
 # OpenSees-on-DesignSafe Training
+***Modeling, Simulation, and HPC Workflows***
+
 by **Silvia Mazzoni**<br>
-Applications Specialist @ DesignSafe<br>
-July 2025
+DesignSafe-CI<br>
+Texas Advanced Computing Center (TACC)<br>
+The University of Texas at Austin<br>
+
+January 2026
 
 
 As a unified platform for natural hazards engineering, **DesignSafe** supports the full research lifecycle by integrating interactive tools, data management services, and high-performance computing resources. Whether you're developing models, running large-scale simulations, or conducting detailed post-processing, DesignSafe provides the infrastructure to streamline and scale your workflow.
