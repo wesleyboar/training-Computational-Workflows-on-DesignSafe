@@ -1,40 +1,59 @@
 # connect_tapis()
 
-***connect_tapis(token_filePath="~/.tapis_tokens.json", base_url="[https://designsafe.tapis.io](https://designsafe.tapis.io)", username="", password="", force_connect=False)***
+***connect_tapis(token_filePath="~/.tapis_tokens.json", base_url="https://designsafe.tapis.io", username="", password="", force_connect=False)***
 
-**Purpose.** Create an authenticated **Tapis** client (e.g., for DesignSafe) with **automatic token caching**. It reuses a valid saved token when available; otherwise it securely prompts for credentials, fetches a new token, saves it for next time, and returns a ready-to-use client.
+**Purpose.** Create and return an authenticated **Tapis** client (for example, for **DesignSafe**) using **automatic token caching**. When possible, the function reuses a valid saved token so you do not have to log in repeatedly. If no valid token is available, it securely prompts for credentials, fetches a new token, saves it, and returns a ready-to-use client.
 
----
+
 
 ### What it does
 
-* **Checks** *token_filePath* (default `~/.tapis_tokens.json`) for a saved token.
-* **Valid token** → uses it directly (no login prompts).
-* **Missing/expired** or **`force_connect=True`** → performs a fresh login, **saves** the token, and continues.
-* **Prints** when the token expires and how long remains.
-* **Interactive login behavior:**
+- **Checks** `token_filePath` (default: `~/.tapis_tokens.json`) for a saved token.
+- If a **valid token** is found and `force_connect=False`, it is reused immediately.
+- If the token file is **missing**, **expired**, **invalid**, or if `force_connect=True`, the function performs a **fresh login**.
+- After a successful fresh login, the function **saves the new token** back to the token file for future use.
+- The function prints:
+  - whether authentication used a **saved token** or a **fresh login**
+  - the token expiration time
+  - the remaining time until expiration
 
-  * If `username` argument is empty, you’ll be prompted for it (**blank = cancel**; returns `None`).
-  * You’re then prompted for your password. **Press Enter on an empty password to restart the prompts and re-enter the username** (useful if you mistyped it).
+### Interactive login behavior
 
----
+If a fresh login is needed:
+
+- If the `username` argument is empty, you are prompted for it.
+- A **blank username** cancels the login and the function returns `None`.
+- You are then prompted for the password using a secure hidden prompt.
+- A **blank password** restarts the login flow so you can re-enter the username.
+
+This restart behavior is useful if you realize you mistyped the username.
 
 ### Parameters
 
-* **token_filePath** *(str, default `"~/.tapis_tokens.json"`)* – Path to the JSON token file.
-* **base_url** *(str, default `"https://designsafe.tapis.io"`)* – Tapis API base URL for your tenancy.
-* **username** *(str, default `""`)* – Preset username; if empty, you’ll be prompted (blank cancels).
-* **password** *(str, default `""`)* – Preset password; if empty, you’ll be prompted securely. **Blank at the prompt restarts** and lets you change the username.
-* **force_connect** *(bool, default `False`)* – Force a fresh login even if a valid token exists.
+- **token_filePath** *(str, default `"~/.tapis_tokens.json"`)*  
+  Path to the JSON file used to store the cached access token and its expiration time.
 
----
+- **base_url** *(str, default `"https://designsafe.tapis.io"`)*  
+  Base URL for the target Tapis tenancy.
+
+- **username** *(str, default `""`)*  
+  Username for login. If left blank, the function prompts for it.
+
+- **password** *(str, default `""`)*  
+  Password for login. If left blank, the function prompts securely for it. Entering a blank password at the prompt restarts the login flow.
+
+- **force_connect** *(bool, default `False`)*  
+  If `True`, ignores any valid saved token and forces a fresh login.
+
+
 
 ### Returns
 
 * **Tapis client** (`tapipy.tapis.Tapis`) **or `None`**
-  An authenticated client when successful; `None` if login was cancelled (blank username) or ultimately failed.
 
----
+Returns an authenticated Tapis client on success. Returns `None` if login is cancelled or cannot be completed.
+
+
 
 ### Token file format (JSON)
 
@@ -45,7 +64,28 @@
 }
 ```
 
-*Expiry strings are parsed leniently; naive timestamps are treated as UTC. On fresh login the file is saved and (best effort) chmod’ed to `0600`.*
+Expiry strings are parsed leniently:
+* timestamps ending in Z are treated as UTC
+* naive timestamps are also assumed to be UTC
+
+On successful fresh login, the function attempts to set the token file permissions to 0600 as a best-effort security measure.
+
+
+### Notes
+
+* The token file stores the **access token** and **expiry time**, not the password.
+* If the saved token cannot be read or validated, the function automatically falls back to a fresh login.
+* On success, the function prints one of the following messages:
+
+```text
+-- AUTHENTICATED VIA SAVED TOKEN --
+```
+
+or
+
+```text
+-- AUTHENTICATED VIA FRESH LOGIN --
+```
 
 ---
 

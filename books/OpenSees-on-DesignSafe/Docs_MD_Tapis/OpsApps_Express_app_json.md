@@ -1,6 +1,6 @@
 # app.json
 
-Here's a **detailed walkthrough of each field** in the *app.json* file for the *OpenSees-express* Tapis App.
+This is a **detailed walkthrough of each field** in the *app.json* file for the *OpenSees-express* Tapis App.
 
 https://github.com/TACC/WMA-Tapis-Templates/blob/main/applications/opensees-express/app.json
 

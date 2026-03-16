@@ -3,84 +3,98 @@ def connect_tapis(token_filePath: str = "~/.tapis_tokens.json",
                   username: str = "",
                   password: str = "",
                   force_connect: bool = False):
-
-    
     """
-    Authenticate to a Tapis (DesignSafe) tenancy with token caching and an interactive fallback.
-    
+    Authenticate to a Tapis tenancy (such as DesignSafe) using cached tokens
+    when available, with an interactive login fallback.
+
     Behavior
     --------
-    - Attempts to reuse a valid cached access token from ``token_filePath`` (default:
-      ``~/.tapis_tokens.json``). If valid, no prompts are shown.
-    - If the cache is missing/expired, or ``force_connect=True``, performs a fresh
-      login and writes a new token back to ``token_filePath``.
+    - Checks ``token_filePath`` (default: ``~/.tapis_tokens.json``) for a saved
+      access token and expiry timestamp.
+    - If a valid cached token is found and ``force_connect=False``, it is reused
+      without prompting for credentials.
+    - If the token file is missing, unreadable, invalid, expired, or
+      ``force_connect=True``, the function performs a fresh login and saves a
+      new token to ``token_filePath``.
     - During interactive login:
-      * If ``username`` is empty, you are prompted for it (blank cancels).
-      * You are then prompted for the password. **Pressing Enter with a blank
-        password restarts the prompts and lets you re-enter the username**.
-    - Prints token expiry details for transparency.
-    
+      * If ``username`` is empty, you are prompted for it.
+      * Entering a blank username cancels login and returns ``None``.
+      * You are then prompted for the password.
+      * Entering a blank password restarts the login flow so you can re-enter
+        the username.
+    - Prints token expiry information and whether authentication used a saved
+      token or a fresh login.
+
     Parameters
     ----------
     token_filePath : str, optional
-        Path to the JSON file that stores the cached token:
+        Path to the JSON file used to store the cached token. The file stores
+        values like:
         ``{"access_token": "...", "expires_at": "...ISO8601..."}``.
         Defaults to ``"~/.tapis_tokens.json"``.
     base_url : str, optional
-        Tapis API base URL for your tenancy. Defaults to
+        Base URL of the Tapis tenancy. Defaults to
         ``"https://designsafe.tapis.io"``.
     username : str, optional
-        Preset username. If empty, you will be prompted (blank cancels).
+        Username to use for login. If empty, the function prompts for it.
+        Defaults to ``""``.
     password : str, optional
-        Preset password. If empty, you will be prompted securely. **Blank** at the
-        prompt restarts the flow so you can change the username.
+        Password to use for login. If empty, the function prompts securely for
+        it. Entering a blank password at the prompt restarts the login flow so
+        the username can be corrected. Defaults to ``""``.
     force_connect : bool, optional
-        If ``True``, ignores any valid cached token and forces a fresh login.
-    
+        If ``True``, skips any valid cached token and forces a fresh login.
+        Defaults to ``False``.
+
     Returns
     -------
     tapipy.tapis.Tapis or None
-        An authenticated client ready to use, or ``None`` if login was cancelled
-        (blank username) or ultimately failed.
-    
+        An authenticated Tapis client if login succeeds, otherwise ``None`` if
+        login is cancelled or cannot be completed.
+
     Notes
     -----
-    - Expiry strings in the cache are parsed leniently; naive timestamps are treated
-      as UTC. On successful login, the cache file is written and (best-effort) set
-      to file mode ``0600`` for local protection.
-    - If the saved token cannot be parsed/validated, a fresh login is performed.
-    
+    - Expiry timestamps are parsed leniently. Strings ending in ``"Z"`` are
+      treated as UTC, and naive timestamps are assumed to be UTC.
+    - On successful fresh login, the token file is written to disk and the code
+      attempts to set file permissions to ``0600`` as a best-effort protection.
+    - If a saved token cannot be parsed or validated, the function falls back
+      to a fresh login.
+
     Examples
     --------
-    >>> t = connect_tapis()           # reuse cached token or prompt as needed
+    Reuse a cached token if valid, otherwise prompt for login:
+
+    >>> t = connect_tapis()
     >>> if t:
     ...     print(t.jobs.getJobList())
-    
+
     Force a fresh login:
+
     >>> t = connect_tapis(force_connect=True)
-    
-    Provide credentials programmatically (no prompts on success):
-    >>> t = connect_tapis(username="me@example.org", password="••••••••")
-    
-    Cancel login at prompt:
-    - Press Enter when asked for username.
-    
-    Restart prompts to fix username:
-    - At the password prompt, press Enter to restart and re-enter the username.
-    
+
+    Provide credentials programmatically:
+
+    >>> t = connect_tapis(username="me@example.org", password="********")
+
+    Cancel login:
+    - At the username prompt, press Enter on a blank username.
+
+    Restart login to correct the username:
+    - At the password prompt, press Enter on a blank password.
+
     Author
     ------
-    Silvia Mazzoni, DesignSafe (silviamazzoni@yahoo.com)
-    
+    Silvia Mazzoni (silviamazzoni@yahoo.com)
+
     Date
     ----
-    2025-09-22
-    
+    2026-03-16
+
     Version
     -------
-    1.2
+    1.3
     """
-    
 
 
     

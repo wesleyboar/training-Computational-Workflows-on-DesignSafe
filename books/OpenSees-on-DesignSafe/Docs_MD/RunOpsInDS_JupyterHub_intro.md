@@ -185,5 +185,3 @@ The **DesignSafe JupyterHub** environment allows you to:
 * Keep your full analysis pipeline in one environment
 
 It is your **launchpad for scalable, reproducible OpenSees workflows**—whether you're just starting a model or scaling it to HPC.
-
-Let me know if you'd like this formatted for Jupyter Book directly or split across multiple pages.
