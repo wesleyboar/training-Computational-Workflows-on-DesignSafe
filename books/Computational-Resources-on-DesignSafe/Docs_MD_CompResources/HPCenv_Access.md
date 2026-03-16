@@ -35,7 +35,7 @@ On HPC systems, you do **not** run scripts directly like on your desktop. Instea
 
 ## Interactive Options
 
-* ### idev: Temporary Shell on Compute Node
+* **idev: Temporary Shell on Compute Node**
 
     To get a real shell on a compute node for compiling, testing, or debugging:
     
@@ -55,13 +55,13 @@ On HPC systems, you do **not** run scripts directly like on your desktop. Instea
 
 TACC’s **JupyterHub** (e.g., TAP) and DesignSafe’s **JupyterLab HPC environments** both provide browser-based interfaces to HPC, but with important distinctions.
 
-* ### TACC JupyterHub (TAP)
+* **TACC JupyterHub (TAP)**
 
     * Submits your Jupyter session as a **job** that runs on a container or virtual node
     * You get access to full resources (e.g., 8 cores, 20 GB RAM)
     * Sessions may queue before launching due to resource limits
 
-* ### DesignSafe JupyterLab HPC (CPU/GPU)
+* **DesignSafe JupyterLab HPC (CPU/GPU)**
 
     * Offers **dedicated access to Stampede3 compute nodes**
     * Originally intended for machine learning workflows, now widely used for:
