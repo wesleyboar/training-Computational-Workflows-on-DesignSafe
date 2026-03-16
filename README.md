@@ -1,9 +1,10 @@
 # Computational Workflows on DS Series
 ***A Series of Documents dedicated to Understanding Interfaces, Middleware, and Execution Environments***
 
-
-by **Silvia Mazzoni**, PhD<br>
-February 2026
+by **Silvia Mazzoni**<br>
+DesignSafe-CI<br>
+Texas Advanced Computing Center (TACC)<br>
+The University of Texas at Austin<br>
 
 ---
 
