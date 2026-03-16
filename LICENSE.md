@@ -1,4 +1,4 @@
-## License
+**License**
 
 This repository contains both educational training material and
 software utilities.
@@ -46,6 +46,11 @@ courses, or derivative works, please include an attribution such as:
     Licensed under CC BY 4.0
 
 Full license texts are available in the LICENSE and LICENSE-CODE files.
+
+::::{dropdown} Repository Attribution Notice
+
+:::{include} NOTICE.md
+::::
 
 
 Non-Endorsement
