@@ -1,0 +1,3 @@
+git remote add upstream https://github.com/DesignSafe-CI/training-Computational-Workflows-on-DesignSafe.git
+
+git config pull.ff only
