@@ -13,7 +13,7 @@
 - [Environment Comparison](Docs_MD_CompResources/CompEnv_FeatureComparison.md)
 - [Selection Guide](Docs_MD_CompResources/CompEnv_SelectionGuide.md)
 
-## Jupyter Hub
+## JupyterHub
 - [JupyterHub Environment](Docs_MD_CompResources/JupyterHub_Intro.md)
 - [JupyterHub Containers](Docs_MD_CompResources/ComputeEnv_JupyterHubContainers.md)
 - [Accessing JupyterHub](Docs_MD_CompResources/AccessJupyter.md)

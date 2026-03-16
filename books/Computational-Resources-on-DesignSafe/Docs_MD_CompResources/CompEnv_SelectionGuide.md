@@ -1,5 +1,5 @@
 # Selection Guide
-***A Practical Guide to Selecting a Compute Environment**
+***A Practical Guide to Selecting a Compute Environment***
 
 Choosing the right compute environment depends on two primary questions:
 

@@ -45,7 +45,7 @@ There are a few main applications, each with its own use case.
      - OpenSeesPy has been added to the DesignSafe Web Portal and Tapis Applications.
      - You can run OpenSeesPy in both Sequential or Parallel environment.
      - There are several ways to run OpenSeesPy in the parallel environment.
-     - Running OpenSeesSP in OpenSeesPy requires some verification since it is environment-dependent. This is beyond the scope of this traning content.
+     - Running OpenSeesSP in OpenSeesPy requires some verification since it is environment-dependent. This is beyond the scope of this training content.
      - Domain decomposition "should be possible" in OpenSeesPy.
 
 ## Quick-Decision Matrix for OpenSees Applications

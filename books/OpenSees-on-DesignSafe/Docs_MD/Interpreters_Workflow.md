@@ -1,4 +1,4 @@
-# Interpreter Worflows
+# Interpreter Workflows
 ***OpenSees-Tcl vs OpenSeesPy: Workflow Patterns & App Selection***
 
 ## Conceptual difference (why workflows feel different)

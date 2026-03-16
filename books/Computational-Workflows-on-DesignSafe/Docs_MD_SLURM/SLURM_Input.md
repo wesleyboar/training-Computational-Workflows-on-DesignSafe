@@ -246,10 +246,3 @@ Once understood, this structure becomes a strength: **the same job description c
 | Output/Error     | Persistent logs           |
 | Archive Settings | Long-term storage         |
 
----
-
-If you’d like, next we can:
-
-* add **MPI-specific patterns** (ranks, per-node files),
-* explicitly contrast **manual SLURM vs Tapis-launched jobs**, or
-* create a **minimal “mental model” diagram** tying scheduling, filesystems, and execution together.

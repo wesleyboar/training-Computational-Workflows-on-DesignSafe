@@ -121,8 +121,3 @@ For tightly coupled MPI simulations, you may rely on Slurm’s native MPI launch
 ### Takeaway
 
 Tapis does not restrict how you use your allocated resources—it simply provides a structured, automated way to obtain them. By combining **custom Tapis apps** with **HPC launchers like PyLauncher**, you can build scalable, high-throughput workflows that are both powerful and reproducible, without sacrificing the flexibility of traditional Slurm-based HPC usage.
-
-If you’d like, the next natural step would be:
-
-* a **worked example** of a launcher-enabled Tapis app, or
-* a **comparison** between PyLauncher, GNU Parallel, and MPI-based approaches inside Tapis.

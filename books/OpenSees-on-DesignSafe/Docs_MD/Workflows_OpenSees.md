@@ -22,7 +22,7 @@ Because each workflow has trade-offs, here are some practical guidelines:
 * Fastest turnaround — no queue wait and no walltime limits.
 * Each container provides **8 processors**.
 
-  <img src="../../../shared/images/WaysToRunOps/WaysToRunOpenSeesOnDS_JupHub.jpg" alt="Workflows for OpenSees on DesignSafe -- Jupyter Hub" width="50%" />  
+  <img src="../../../shared/images/WaysToRunOps/WaysToRunOpenSeesOnDS_JupHub.jpg" alt="Workflows for OpenSees on DesignSafe -- JupyterHub" width="50%" />  
 
 ### 2. Submit medium to large jobs to HPC from JupyterHub
 

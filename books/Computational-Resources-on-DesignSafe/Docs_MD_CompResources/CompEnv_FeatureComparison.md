@@ -2,7 +2,7 @@
 
 DesignSafe exposes multiple execution environments that differ in *interaction model*, *resource allocation*, and *scaling behavior*.
 
-InDesignSafe, some applications, such as OpenSees, are available on Virtual Machines (VM). We are using the OpenSees-Express VM here as an example for comparison purposes.
+In DesignSafe, some applications, such as OpenSees, are available on Virtual Machines (VM). We are using the OpenSees-Express VM here as an example for comparison purposes.
 
 ### Feature Comparison
 

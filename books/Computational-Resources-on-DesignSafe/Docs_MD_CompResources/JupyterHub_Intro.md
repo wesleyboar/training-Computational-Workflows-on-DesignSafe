@@ -5,7 +5,7 @@ The **JupyterHub Environment** on DesignSafe runs on a Kubernetes-managed cluste
 
 This environment is the **starting point *(and end point)* for most workflows**. It allows you to iteratively build and test your input scripts in real time before scaling up to HPC batch jobs.
 
-## Why Use Jupyter Hub?
+## Why Use JupyterHub?
 
 * **Immediate startup** — no job queues or allocation requests
 * **Full control and feedback** — ideal for debugging, exploration, and visualization
@@ -15,7 +15,7 @@ This environment is the **starting point *(and end point)* for most workflows**.
 
 ## Performance and Resources
 
-* Jupyter Hub supports **Python**, **Julia**, **MATLAB**, and **R** — useful for researchers integrating multi-language workflows.
+* JupyterHub supports **Python**, **Julia**, **MATLAB**, and **R** — useful for researchers integrating multi-language workflows.
 * Each Jupyter session runs in its own **container**, orchestrated by Kubernetes. The system guarantees:
 
 * Up to **8 CPU cores** and **20 GB of RAM** per user session
@@ -31,7 +31,7 @@ This environment is optimized for:
 
 ## Summary
 
-The **DesignSafe Jupyter Hub** is a powerful entry point into workflows. It offers dedicated computing resources in an easy-to-use environment where you can:
+The **DesignSafe JupyterHub** is a powerful entry point into workflows. It offers dedicated computing resources in an easy-to-use environment where you can:
 
 * Develop, debug, and run your scripts in real time
 * Automate job submission to HPC systems like Stampede3
