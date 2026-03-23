@@ -14,13 +14,13 @@ parts:
       
   - caption: Documents
     chapters:
-    - url: /training-Computational-Workflows-on-DesignSafe/Computational-Workflows-on-DesignSafe/README.html
+    - url: https://wesleyboar.github.io/training-Computational-Workflows-on-DesignSafe/Computational-Workflows-on-DesignSafe/README.html
       title: Computational Workflows
-    - url: /training-Computational-Workflows-on-DesignSafe/Computational-Resources-on-DesignSafe/README.html
+    - url: https://wesleyboar.github.io/training-Computational-Workflows-on-DesignSafe/Computational-Resources-on-DesignSafe/README.html
       title: Compute Resources
-    - url: /training-Computational-Workflows-on-DesignSafe/OpenSees-on-DesignSafe/README.html
+    - url: https://wesleyboar.github.io/training-Computational-Workflows-on-DesignSafe/OpenSees-on-DesignSafe/README.html
       title: OpenSees on DesignSafe
-    - url: /training-Computational-Workflows-on-DesignSafe/OpsUtils-Python-Utilities-on-DesignSafe/README.html
+    - url: https://wesleyboar.github.io/training-Computational-Workflows-on-DesignSafe/OpsUtils-Python-Utilities-on-DesignSafe/README.html
       title: Python Utilities
       
   - caption: DesignSafe
